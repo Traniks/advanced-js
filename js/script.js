@@ -1,3 +1,66 @@
+// 8888888888888888888888888888888888. Методы перебора массивов
+// "use strict";
+
+///////////////////// filter
+
+// const names = ["Ivan", "Ann", "Ksenia", "Vlodimer"];
+
+// const shortNames = names.filter(function(name) {
+//     return name.length < 5;
+// });
+
+// console.log(shortNames);
+
+///////////////////// map
+
+// let answers = ["IvAn", "AnnA", "KseNIa", "Vlodimer"];
+
+// answers = answers.map(item => {
+//     return item.toLocaleLowerCase();
+// });
+
+// console.log(answers);
+
+///////////////////// every/some
+
+// const some = [4, "qwq", "fsdasafs"];
+
+// console.log(some.some(item => typeof(item) === "number"));
+
+// const every = [4, 5, 7];
+
+// console.log(every.every(item => typeof(item) === "number"));
+
+///////////////////// reduce
+
+// const arr = [4, 5, 1, 3, 2, 6];
+
+//                     // сумма  что приходит(4)
+// const res = arr.reduce((sum, current) => sum + current, 3)
+// console.log(res);
+
+// const arr = ["appele", "pear", "plum"];
+
+//                     // сумма  что приходит(4)
+// const res = arr.reduce((sum, current) => {
+//     return `${sum}, ${current}`;
+// });
+// console.log(res);
+
+// const obj = {
+//     ivan: "persone",
+//     ann: "persone",
+//     dog: "animal",
+//     cat: "animal"
+// };
+
+// const newArr = Object.entries(obj)
+// .filter(item => item[1] === "persone")
+// .map(item => item[0]);
+
+// console.log(newArr);
+
+
 // 868686868686868686868686868. Promise (ES6)
 // "use strict";
 
