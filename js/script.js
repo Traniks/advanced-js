@@ -1,5 +1,27 @@
-// 95. Как сохранить данные без БД. Работа с localStorage
-"use strict";
+// 9696966969696996969696966996. Регулярные выражения
+// "use strict";
+
+// new RegExp("pattern", "flags");
+// /pattern/flag
+
+// const ans = prompt("Введите ваше имя");
+
+// const reg = /n/ig;
+
+// console.log(ans.match(reg));
+
+// const pass = prompt("Passwoed");
+
+// console.log(pass.replace(/./g, "*"));
+
+// const ans = prompt("Введите ваше имя");
+
+// const reg = /n/ig;
+// console.log(reg.test(ans));
+
+
+// 95599595959595959595. Как сохранить данные без БД. Работа с localStorage
+// "use strict";
 
 // localStorage.setItem("number", 5); //чтобы записать новый ключ со значением
 // localStorage.getItem("number"); //чтобы получить 
@@ -7,41 +29,41 @@
 // localStorage.clear(); //полное удаление
 
 
-const checkbox = document.querySelector("#checkbox");
-const form = document.querySelector("form");
-const change = document.querySelector("#color");
+// const checkbox = document.querySelector("#checkbox");
+// const form = document.querySelector("form");
+// const change = document.querySelector("#color");
 
-if (localStorage.getItem("isChecked")) {
-    checkbox.checked = true;
-}
+// if (localStorage.getItem("isChecked")) {
+//     checkbox.checked = true;
+// }
 
-if (localStorage.getItem("bg") === "changed") {
-    form.style.backgroundColor = "red";
-}
+// if (localStorage.getItem("bg") === "changed") {
+//     form.style.backgroundColor = "red";
+// }
 
-checkbox.addEventListener("change", () => {
-    localStorage.setItem("isChecked", true);
-});
+// checkbox.addEventListener("change", () => {
+//     localStorage.setItem("isChecked", true);
+// });
 
-change.addEventListener("click", () => {
-    if (localStorage.getItem("bg") === "changed") {
-         localStorage.removeItem("bg");
-         form.style.backgroundColor = "#fff";
-    } else {
-        localStorage.setItem("bg", "changed");
-        form.style.backgroundColor = "red";
-    }
-});
+// change.addEventListener("click", () => {
+//     if (localStorage.getItem("bg") === "changed") {
+//          localStorage.removeItem("bg");
+//          form.style.backgroundColor = "#fff";
+//     } else {
+//         localStorage.setItem("bg", "changed");
+//         form.style.backgroundColor = "red";
+//     }
+// });
 
-const persone = {
-    name: "Alex",
-    age: 25
-};
+// const persone = {
+//     name: "Alex",
+//     age: 25
+// };
 
-const serializedPersone = JSON.stringify(persone);
-localStorage.setItem("alex", serializedPersone);
+// const serializedPersone = JSON.stringify(persone);
+// localStorage.setItem("alex", serializedPersone);
 
-console.log(JSON.parse(localStorage.getItem("alex")));
+// console.log(JSON.parse(localStorage.getItem("alex")));
 
 
 // 8888888888888888888888888888888888. Методы перебора массивов
