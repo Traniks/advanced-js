@@ -1,3 +1,44 @@
+// 100100100100100100. Инкапсуляция
+"use strict";
+
+function User(name, age) {
+    this.name = name;
+    this.userAge = age;
+
+    this.say = function() {
+        console.log(`Имя пользователя: ${this.name}, возраст ${this.userAge}`);
+    };
+}
+
+const ivan = new User("Ivan, 27");
+console.log(ivan.name);
+console.log(ivan.userAge);
+
+ivan.userAge = 30;
+ivan.name = "Alex";
+
+ivan.say();
+
+// 999999999999999999. Геттеры и сеттеры (свойства объектов)
+// "use strict";
+
+// const persone = {
+//     name: "Alex",
+//     age: 25,
+
+//     get userAge() {
+//         return this.age;
+//     },
+
+//     set userAge(num) {
+//         this.age = num;
+//     }
+// };
+
+// console.log(persone.userAge);
+// console.log(persone.userAge = 30);
+// console.log(persone.userAge);
+
 // 9696966969696996969696966996. Регулярные выражения
 // "use strict";
 
