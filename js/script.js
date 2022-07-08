@@ -1,23 +1,66 @@
+// 102102102102 Webpack. Собираем наш проект
+
+
+
+// 101101101101. Прием модуль, как и зачем его использовать
+// "use strict";
+
+// const number = 1; // глобальная
+
+// (function(){ // локальная
+//     let number = 2;
+//     console.log(number);
+//     console.log(number + 3);
+// }());
+
+// console.log(number);
+
+
+// const user = (function(){
+//     const privat = function() {
+//         console.log("Я приватный");
+//     };
+
+//     return {
+//         sayHello: privat
+//     };
+// }());
+
+// user.sayHello();
+
 // 100100100100100100. Инкапсуляция
-"use strict";
+// "use strict";
 
-function User(name, age) {
-    this.name = name;
-    this.userAge = age;
+// class User {
+//     constructor(name, age) {
+//         this.name = name;
+//         this._age = age;
+//     }
 
-    this.say = function() {
-        console.log(`Имя пользователя: ${this.name}, возраст ${this.userAge}`);
-    };
-}
+//     #surname = "Petrychenko";
 
-const ivan = new User("Ivan, 27");
-console.log(ivan.name);
-console.log(ivan.userAge);
+//     say = () => {
+//         console.log(`Имя пользователя: ${this.name}${this.#surname}, возраст ${this._age}`);
+//     }
 
-ivan.userAge = 30;
-ivan.name = "Alex";
+//     get age() { // метод получение
+//         return this._age;
+//     }
 
-ivan.say();
+//     set age(age) { // метод установки
+//         if (typeof age === "number" && age > 0 && age < 110) {
+//             this._age = age;
+//         } else {
+//             console.log("Неверное значение!");
+//         }
+//     }
+// }
+
+// const ivan = new User("Ivan", 27);
+// console.log(ivan.age); // get - 27
+// ivan.age = 99; // set 
+// console.log(ivan.surname); // get - 99
+// ivan.say();
 
 // 999999999999999999. Геттеры и сеттеры (свойства объектов)
 // "use strict";
