@@ -1,5 +1,10 @@
 // 102102102102 Webpack. Собираем наш проект
+const myModule = require("./main");
 
+const myModuleInstance = new myModule();
+
+myModuleInstance.hello();
+myModuleInstance.goodbye();
 
 
 // 101101101101. Прием модуль, как и зачем его использовать
