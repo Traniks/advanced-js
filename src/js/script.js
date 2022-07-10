@@ -1,10 +1,19 @@
+// 103103103103103103 ES6 Modules
+import * as data from "./main.js"; // получит 
+import sayHi from "./main.js";
+
+console.log(`${data.one} and ${data.two}`);
+sayHi();
+
+
+
 // 102102102102 Webpack. Собираем наш проект
-const myModule = require("./main");
+// const myModule = require("./main");
 
-const myModuleInstance = new myModule();
+// const myModuleInstance = new myModule();
 
-myModuleInstance.hello();
-myModuleInstance.goodbye();
+// myModuleInstance.hello();
+// myModuleInstance.goodbye();
 
 
 // 101101101101. Прием модуль, как и зачем его использовать
