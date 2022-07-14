@@ -1,11 +1,22 @@
+//106106106106106106106106106106. Ошибки. Как избежать “поломки” своего кода
+"use strict";
+
+try {
+    document.querySelector(".active").addEventListener("click", () => {
+        console.log("click");
+    });
+} catch(e) {
+    console.log(e);
+}
+
+console.log("normal");
+
 // 103103103103103103 ES6 Modules
-import * as data from "./main.js"; // получит 
-import sayHi from "./main.js";
+// import * as data from "./main.js"; // получит 
+// import sayHi from "./main.js";
 
-console.log(`${data.one} and ${data.two}`);
-sayHi();
-
-
+// console.log(`${data.one} and ${data.two}`);
+// sayHi();
 
 // 102102102102 Webpack. Собираем наш проект
 // const myModule = require("./main");
