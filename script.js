@@ -1,15 +1,15 @@
 //106106106106106106106106106106. Ошибки. Как избежать “поломки” своего кода
-"use strict";
+// "use strict";
 
-try {
-    document.querySelector(".active").addEventListener("click", () => {
-        console.log("click");
-    });
-} catch(e) {
-    console.log(e);
-}
+// try {
+//     document.querySelector(".active").addEventListener("click", () => {
+//         console.log("click");
+//     });
+// } catch(e) {
+//     console.log(e);
+// }
 
-console.log("normal");
+// console.log("normal");
 
 // 103103103103103103 ES6 Modules
 // import * as data from "./main.js"; // получит 
