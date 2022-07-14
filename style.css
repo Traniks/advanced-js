@@ -1,17 +1,15 @@
 * {
     box-sizing: border-box;
-}
-.wrapper {
-    width: 400px;
-    margin: 40px auto 0 auto;
-    border: 1px solid rgba(0,0,0, .2);
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-button {
-    margin-top: 20px;
-}
-
-[type=checkbox] {
-    margin-top: 20px;
+.box {
+    width: 300px;
+    height: 250px;
+    margin: 40px auto;
+    padding: 50px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 20px;
 }
