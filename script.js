@@ -1,35 +1,37 @@
+// 108. Как превратить код ES6+ в старый формат ES5. Babel, Core.js и полифиллы
+
 // 107. (д) Создание своих ошибок
-"use strict";
+// "use strict";
 
-const data = [
-    {
-        id: "box",
-        tag: "div"
-    },
-    {
-        id: "fff",
-        tag: "nav"
-    },
-    {
-        id: "circle",
-        tag: ""
-    }
-];
+// const data = [
+//     {
+//         id: "box",
+//         tag: "div"
+//     },
+//     {
+//         id: "fff",
+//         tag: "nav"
+//     },
+//     {
+//         id: "circle",
+//         tag: ""
+//     }
+// ];
 
-try {
-    data.forEach((blockObj, i) => {
-        const block = document.createElement(blockObj.tag);
+// try {
+//     data.forEach((blockObj, i) => {
+//         const block = document.createElement(blockObj.tag);
     
-        if (!blockObj.id) throw new SyntaxError(`В данных под номером ${i + 1} нет id`);
+//         if (!blockObj.id) throw new SyntaxError(`В данных под номером ${i + 1} нет id`);
     
-        block.setAttribute("id", blockObj.id);
-        document.body.append(block);
-    });
-} catch(e) {
-    if (e.name === "SyntaxError") {
-        console.log(e.message);
-    } else throw e;
-}
+//         block.setAttribute("id", blockObj.id);
+//         document.body.append(block);
+//     });
+// } catch(e) {
+//     if (e.name === "SyntaxError") {
+//         console.log(e.message);
+//     } else throw e;
+// }
 
 // const err = new SyntaxError("1");
 // console.log(err.name, err.message, err.stack);
