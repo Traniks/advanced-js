@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   	<title>Document</title>
-   	<link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  	
-	<div class="list">
-		<button id="btn" class="list-item">Первый</button>
-		<button class="list-item">Второй</button>
-		<button class="list-item">Третий!</button>
-		<button class="list-item">Четвертый</button>
-		<button class="list-item">Пятый</button>
-	</div>
+    <title>Заголовок</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-	<div class="wrapper">
-		<img src="https://cdn.pixabay.com/photo/2018/02/13/23/41/nature-3151869_960_720.jpg" alt="1" class="image">
-		<img src="https://cdn.pixabay.com/photo/2018/03/06/03/56/cyclist-3202481_960_720.jpg" alt="2" class="image">
-	</div>
+    <div class="wrapper">
+        <form class="form-signin">
+            <h2 class="form-signin-heading">This is form</h2>
+            <input type="text" class="form-control">
+            <input id="checkbox" type="checkbox">
+            <button class="btn btn-block btn-lg btn-primary">Confirm</button>
+        </form>
+        <button id="color" class="btn btn-block btn-lg btn-primary">Change color</button>
+    </div>
 
-	<script src="dist/bundle.js"></script>
-  </body>
+    <script src="js/script.js"></script>
+</body>
 </html>
