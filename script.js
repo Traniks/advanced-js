@@ -1,36 +1,33 @@
-// "use strict";
+const btn = document.querySelector('.btn'),
+      elem = document.querySelector('.box');  
+let pos = 0;
 
-// function* generator() {
-//     yield "S";
-//     yield "c";
-//     yield "r";
-//     yield "i";
-//     yield "p";
-//     yield "t";
-// }
+// function myAnimation() {
+//     let pos = 0;
 
-// const str = generator();
-
-// console.log(str.next());
-// console.log(str.next());
-// console.log(str.next());
-// console.log(str.next());
-// console.log(str.next());
-// console.log(str.next());
-// console.log(str.next());
-
-// function* count(n) {
-//     for (let i = 0; i < n; i++) {
-//         yield i;
+//     const id = setInterval(frame, 10);
+//     function frame() {
+//         if (pos == 300) {
+//             clearInterval(id);
+//         } else {
+//             pos++;
+//             elem.style.top = pos + "px";
+//             elem.style.left = pos + 'px';
+//         }
 //     }
 // }
 
-// for (let k of count(7)) {
-//     console.log(k);
-// }
+function myAnimation() {
+    pos++;
+    elem.style.top = pos + "px";
+    elem.style.left = pos + 'px';
 
-// const counter = count(7);
+    if (pos < 300) {
+        requestAnimationFrame(myAnimation);
+    }
+}
 
-// console.log(counter.next().value);
-// console.log(counter.next().value);
-// console.log(counter.next().value);
+btn.addEventListener('click', () => requestAnimationFrame(myAnimation));
+
+let id = requestAnimationFrame(myAnimation); //останавливает 
+cancelAnimationFrame(id);
