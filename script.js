@@ -1,12 +1,10 @@
-setTimeout(() => console.log("timeout"));
+"use strict";
 
-Promise.resolve()
-    .then(() => console.log("promise"));
+import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
 
-queueMicrotask(() => console.log("wow"));
-
-
-Promise.resolve()
-    .then(() => console.log("promise"));
-
-console.log("code");
+tns({
+    container: '.my-slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true
+  });
